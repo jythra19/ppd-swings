@@ -1,0 +1,57 @@
+/* Set background image for the body */
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5c6deae45239583862282373/1664125209369-8CH1Q26DG7NJ01C6GDI9/Maryland+Summer+Maternity+Photos-8.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Make the background image fixed while scrolling */
+    font-family: Arial, sans-serif; /* Set the default font */
+    color: #e7e3e3; /* Set the text color to white for better contrast */
+}
+
+/* Styling for the header */
+header {
+    background-color: rgba(48, 47, 47, 0.7); /* Slight transparency for better readability */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f5f1f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main section styling */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Intro section */
+.intro {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for text */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

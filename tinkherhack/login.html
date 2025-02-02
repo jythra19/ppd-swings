@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <form class="login-form" onsubmit="return redirectToDashboard(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="role-buttons">
+                <button type="submit" class="btn patient-btn">Login as Patient</button>
+                <button type="submit" class="btn partner-btn">Login as Partner</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Postpartum Depression Support</p>
+    </footer>
+
+    <script>
+        function redirectToDashboard(event) {
+            event.preventDefault();
+            window.location.href = "patient_dashboard.html";
+        }
+    </script>
+</body>
+</html>

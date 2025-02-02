@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayPatientData() {
+            // Get patient data from localStorage
+            var mood = localStorage.getItem("patientMood");
+            var q1 = localStorage.getItem("question1");
+            var q2 = localStorage.getItem("question2");
+
+            // Display the data
+            document.getElementById("patientMood").innerText = "Recent Mood: " + mood;
+            document.getElementById("q1Answer").innerText = "How are they coping: " + q1;
+            document.getElementById("q2Answer").innerText = "Do they feel supported by their partner: " + q2;
+        }
+    </script>
+</head>
+<body onload="displayPatientData()">
+    <header>
+        <h1>Partner Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Partner Dashboard</h2>
+        <p id="patientMood"></p>
+        <p id="q1Answer"></p>
+        <p id="q2Answer"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Postpartum Depression Support</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Correct credentials
+            if (username === "jythra" && password === "akshaya") {
+                alert("Login successful!");
+                // Show the questionnaire after successful login
+                document.getElementById("moodQuestionnaire").style.display = "block";
+                document.getElementById("loginForm").style.display = "none";  // Hide the login form
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        }
+
+        function storeAnswers() {
+            var answers = {
+                mood: document.querySelector('input[name="mood"]:checked') ? document.querySelector('input[name="mood"]:checked').value : '',
+                question1: document.getElementById("question1").value,
+                question2: document.getElementById("question2").value,
+                question3: document.getElementById("question3").value
+            };
+            // Store the answers in localStorage
+            localStorage.setItem("patientAnswers", JSON.stringify(answers));
+            alert("Your answers have been saved.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Patient Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="partner_login.html">Partner Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login to Access Your Postpartum Mood Tracker</h2>
+        <form id="loginForm" onsubmit="event.preventDefault(); validateLogin();">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Hidden mood selection and questionnaire -->
+        <div id="moodQuestionnaire" style="display: none;">
+            <h3>Postpartum Questionnaire</h3>
+            <form onsubmit="event.preventDefault(); storeAnswers();">
+                <label for="mood">How would you describe your current mood?</label><br>
+                <input type="radio" id="mood1" name="mood" value="Happy"> Happy
+                <input type="radio" id="mood2" name="mood" value="Sad"> Sad
+                <input type="radio" id="mood3" name="mood" value="Anxious"> Anxious
+                <input type="radio" id="mood4" name="mood" value="Irritable"> Irritable
+                <input type="radio" id="mood5" name="mood" value="Tired"> Tired<br>
+
+                <label for="question1">How often do you feel overwhelmed by the responsibilities of motherhood?</label>
+                <textarea id="question1" rows="3"></textarea><br>
+
+                <label for="question2">Do you have trouble sleeping or feel fatigued most of the time?</label>
+                <textarea id="question2" rows="3"></textarea><br>
+
+                <label for="question3">How do you feel about your relationship with your partner right now?</label>
+                <textarea id="question3" rows="3"></textarea><br>
+
+                <button type="submit">Submit Answers</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Postpartum Depression Support</p>
+    </footer>
+</body>
+</html>
