@@ -10,7 +10,9 @@
 - Member 2: Jythra Prasad - College of Engineering Pathanapuram
 
 ### Hosted Project Link
-[mention your project hosted project link here]
+
+https://vercel.com/akshaya-t-s-projects/ppd-swings/8MWe83NsXDkSFnXXJtNKaZf4bW9E
+
 
 ### Project Description
 Our project is a web-based platform designed to support women experiencing postpartum depression (PPD) by analyzing their mood patterns and providing personalized mental health resources. Users can log their emotions, track mood swings, and receive coping strategies. Partners can create accounts to access insights into their loved one’s mental health status and receive tailored guidance on how to provide emotional and practical support. The platform includes educational content, interactive tools, and professional resources to foster understanding and strengthen relationships during the postpartum period. Built with HTML, CSS, and javascript, the website ensures a seamless and user-friendly experience for both patients and their partners.
@@ -52,18 +54,21 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot 2025-02-02 100055](https://github.com/user-attachments/assets/29fcca99-2bd7-4480-b29f-b73c3710bfaa)
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Screenshot 2025-02-02 100108](https://github.com/user-attachments/assets/39c1737d-6d96-4f18-b4bb-20c3e2cda8ee)
+
+
+
+![Screenshot 2025-02-02 100130](https://github.com/user-attachments/assets/03bb7bba-033e-486b-8452-c89d87d7ed67)
+
+
+
+![Screenshot 2025-02-02 100145](https://github.com/user-attachments/assets/4e07c691-dcd3-4235-968a-15b7b5649870)
+
+
 
 For Hardware:
 
@@ -81,20 +86,6 @@ For Hardware:
 
 
 
-![Screenshot 2025-02-02 100055](https://github.com/user-attachments/assets/29fcca99-2bd7-4480-b29f-b73c3710bfaa)
-
-
-![Screenshot 2025-02-02 100108](https://github.com/user-attachments/assets/39c1737d-6d96-4f18-b4bb-20c3e2cda8ee)
-
-
-
-![Screenshot 2025-02-02 100130](https://github.com/user-attachments/assets/03bb7bba-033e-486b-8452-c89d87d7ed67)
-
-
-
-![Screenshot 2025-02-02 100145](https://github.com/user-attachments/assets/4e07c691-dcd3-4235-968a-15b7b5649870)
-
-
 ### Project Demo
 # Video
 
@@ -107,9 +98,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Akshaya T S: implement design, enhancement of code, work with code
+- Jythra Prasad: Idea Generation, work with code
+  
 
 ---
 Made with ❤️ at TinkerHub
